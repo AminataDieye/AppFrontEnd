@@ -1,0 +1,29 @@
+
+mat-icon
+{
+    font-size: 15px;
+    color:black;    
+}
+
+.card-body
+{
+   margin-top: 20px;
+}
+.icon2
+{
+    margin-top: 25px;
+    margin-left: -25px;
+}
+.description
+{
+    width: 200px;
+}
+.titre
+{
+    width: 80px;
+}
+th
+{
+    background-color: papayawhip;
+
+}

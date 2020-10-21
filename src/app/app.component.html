@@ -1,0 +1,26 @@
+
+<body>
+<mat-toolbar color="primary" class="header">
+    <a href="#" style="color: #ffffff; letter-spacing: 0.1em;"> App Tâches</a>
+    <span >
+    </span>
+  </mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav-content  mode="side" class="mat-sidenav1" >
+
+      <mat-nav-list>
+        <a mat-list-item routerLinkActive="active" routerLink="/ajouter-tache">
+          <mat-icon>add</mat-icon> Ajouter tache
+        </a>
+        <a mat-list-item routerLinkActive="active" routerLink="/lister-tache">
+          <mat-icon>format_list_bulleted</mat-icon> Liste tache
+        </a>
+      </mat-nav-list>
+    </mat-sidenav-content>
+<mat-sidenav-content class="mat-sidenav2">
+<router-outlet>
+</router-outlet>
+</mat-sidenav-content>
+</mat-sidenav-container>
+</body>

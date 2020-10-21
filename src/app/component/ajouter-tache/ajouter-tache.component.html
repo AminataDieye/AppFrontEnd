@@ -1,0 +1,42 @@
+<div class="title-group">
+  <h1 class="mat-h1">Ajouter tâche</h1>
+  <mat-divider fxFlex="1 0"></mat-divider>
+</div>
+
+<!-- Form -->
+<div class="innerW">
+  <form [formGroup]="tacheForm" (ngSubmit)="onSubmit()" >
+    <mat-card>
+      <div class="controlersW">
+        <!-- Titre -->
+        <mat-form-field>
+          <input matInput placeholder="Titre tache" formControlName="titre" required>
+        
+        </mat-form-field>
+
+        <!-- Description -->
+        <mat-form-field>
+          <textarea matInput formControlName="description" placeholder="Description tache" required ></textarea>
+        </mat-form-field>
+ 
+        <!-- Date -->
+           <div class="form-group">           
+              <mat-datepicker #picker></mat-datepicker>
+             <input  class="date form-control" type="date" matInput  [matDatepicker]="picker" formControlName="date"
+             >
+           </div>
+
+
+
+        <div class="fullW buttonW">
+          <div class="buttonW">
+            <button mat-flat-button color="warn">Valider</button>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+
+   
+
+  </form>
+</div>
